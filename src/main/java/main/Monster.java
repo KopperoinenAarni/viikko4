@@ -35,5 +35,9 @@ public class Monster implements Serializable {
         index = index + 1;
         System.out.println(index + ": " + type + " / " + health + "HP");
     }
+
+    public void codegrade() {
+        System.out.println("muutos, jotta voi git pushata");
+    }
 }
 

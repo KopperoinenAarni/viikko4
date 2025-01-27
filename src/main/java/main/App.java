@@ -37,7 +37,7 @@ public class App {
                         break;
 
                     case 2:
-                    if (cave.monsters != null) {
+                    if (!cave.monsters.isEmpty()) {
                         System.out.println("Luolan hirviöt:");
                     }
                     cave.listMonsters();
