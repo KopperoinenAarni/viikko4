@@ -37,8 +37,11 @@ public class App {
                         break;
 
                     case 2:
-                        cave.listMonsters();
-                        break;
+                    if (cave.monsters != null) {
+                        System.out.println("Luolan hirviöt:");
+                    }
+                    cave.listMonsters();
+                    break;
 
                     case 3:
                         System.out.println("Valitse hirviö, johon hyökätä: ");
