@@ -32,7 +32,7 @@ public class Cave implements Serializable {
         public void attack(Monster monster) {
             Player.attack(monster);
             System.out.println(player.getName() + " hyökkää " + monster.getType() + " hirviöön!");
-            System.out.println("Hirviöllä " + " on: " + monster.getHealth() + " jäljellä.");
+            System.out.println("Hirviöllä on" + monster.getHealth() + "elämää jäljellä.");
         }
     
         public static void removeMonster(Monster monster) {
