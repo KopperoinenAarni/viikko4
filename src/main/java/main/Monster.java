@@ -24,9 +24,6 @@ public class Monster implements Serializable {
     
     public void takeDamage(int damage) {
         this.health -= damage;
-        if (this.health <= 0) {
-                Cave.removeMonster(this); 
-            }
     }
 
     public Monster(String type, int health) {
