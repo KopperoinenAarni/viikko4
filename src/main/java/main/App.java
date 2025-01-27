@@ -43,8 +43,12 @@ public class App {
                     case 3:
                         System.out.println("Valitse hirviö, johon hyökätä: ");
                         cave.listMonsters();
-                        int type = Integer.parseInt(sc.nextLine());
-                        cave.attack(cave.monsters.get(type));
+                        int type = Integer.parseInt(sc.nextLine()) - 1;
+                        if (type >= 0 && type < cave.monsters.size()) {
+                            cave.attack(cave.monsters.get(type));
+                        } else {
+                            System.out.println("Virheellinen valinta.");
+                        }
                         break;
 
                     case 4:
@@ -57,7 +61,6 @@ public class App {
                         System.out.println("Anna tiedoston nimi, josta peli ladataan: ");
                         String loadFileName = sc.nextLine();
                         cave = loadGame(loadFileName);
-                        System.out.println("Peli ladattu tiedostosta " + loadFileName + "." + "Tervetuloa takaisin, " + player.getName() + ".");
                         break;
 
                     case 0:
