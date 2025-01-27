@@ -45,4 +45,7 @@ public class Cave implements Serializable {
         public void removeMonster(Monster monster) {
             monsters.remove(monster);
     }
+        public void codegrade() {
+        System.out.println("muutos, jotta voi git pushata");
+    }
 }
