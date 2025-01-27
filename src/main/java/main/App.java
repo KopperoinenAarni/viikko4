@@ -19,7 +19,7 @@ public class App {
             System.out.println("3) Hyökkää hirviöön");
             System.out.println("4) Tallenna peli");
             System.out.println("5) Lataa peli");
-            System.out.println("0) Lopeta");
+            System.out.println("0) Lopeta peli");
 
             if (sc.hasNext()) {
                 int i = 0;
