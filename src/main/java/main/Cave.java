@@ -37,6 +37,7 @@ public class Cave implements Serializable {
             System.out.println(player.getName() + " hyökkää " + monster.getType() + " hirviöön!");
             if (monster.getHealth() <= 0) {
                 System.out.println(monster.getType() + " on kuollut!");
+                removeMonster(monster);
             } else {
                 System.out.println("Hirviöllä on " + monster.getHealth() + " elämää jäljellä.");
             }
