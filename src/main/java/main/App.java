@@ -89,7 +89,7 @@ public class App {
     public static Cave loadGame(String fileName) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             Cave cave = (Cave) ois.readObject();
-            System.out.println("Peli ladattu tiedostosta " + fileName + ". Tervetuloa takaisin, " + cave.player.getname());
+            System.out.println("Peli ladattu tiedostosta " + fileName + ". Tervetuloa takaisin, " + cave.player.getName() + ".");
             return cave;
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

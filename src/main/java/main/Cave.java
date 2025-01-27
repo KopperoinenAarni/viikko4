@@ -1,3 +1,4 @@
+
 package main;
 
 import java.io.Serializable;
@@ -29,14 +30,14 @@ public class Cave implements Serializable {
             }
         }
     
- public void attack(Monster monster) {
-            Player.attack(monster);
+        public void attack(Monster monster) {
+            player.attack(monster);
             System.out.println(player.getName() + " hyökkää " + monster.getType() + " hirviöön!");
             if (monster.getHealth() <= 0) {
                 System.out.println(monster.getType() + " on kuollut!");
+            } else {
+                System.out.println("Hirviöllä on " + monster.getHealth() + " elämää jäljellä.");
             }
-            else
-                System.out.println("Hirviöllä on" + monster.getHealth() + "elämää jäljellä.");
         }
     
         public static void removeMonster(Monster monster) {
