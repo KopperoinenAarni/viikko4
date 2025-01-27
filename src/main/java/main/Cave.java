@@ -35,10 +35,7 @@ public class Cave implements Serializable {
         public void attack(Monster monster) {
             player.attack(monster);
             if (monster.getHealth() <= 0) {
-                System.out.println(monster.getType() + " on kuollut!");
                 removeMonster(monster);
-            } else {
-                System.out.println("Hirviöllä on " + monster.getHealth() + " elämää jäljellä.");
             }
         }
     
