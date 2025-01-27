@@ -19,10 +19,7 @@ public class Player implements Serializable {
         this.name = name;
     }
 
-    public void attack(Monster monster, List<Monster> monsters) {
-        monster.takeDamage(10);
-        if (monster.getHealth() <= 0) {
-            monsters.remove(monster);
-        }
+    public void attack(Monster target) {
+        target.takeDamage(10);
     }
 }
