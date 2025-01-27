@@ -78,7 +78,7 @@ public class App {
     public static void saveGame(Cave cave, String fileName) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
             oos.writeObject(cave);
-            System.out.println("Peli tallennettu tiedostoon " + fileName);
+            System.out.println("Peli tallennettiin tiedostoon " + fileName + ".");
         } catch (IOException e) {
             e.printStackTrace();
         }
